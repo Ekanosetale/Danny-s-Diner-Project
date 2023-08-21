@@ -38,6 +38,7 @@ Use of CASE Statement
 # DIiscussion of Procedures to Resolve the Problems
 To get the total amount each customer spent at the restaurant, I JOIN the sales table with the menu table, SUM the price column, name it AS Total¬ Amount, and SELECT DISTINCTly.
 The next question is to get the number of days each customer visited the restaurant. I did a DISTINCT COUNT of the order date and named the new column No. of Days, GROUP IT BY customer id, and SELECT the customer id.
+![](SQL1.PNG)
 I found the first item each customer purchased from the menu by JOINING the sales and menu tables WHERE the order date is equal to the customer’s first day of visiting the restaurant (2021-01-01)  and then SELECTED all columns. 
   Also, the most purchased item on the menu and the number of times all customers purchased it was calculated thus: I joined the sales and menu tables, COUNTED  the names of each purchased product, SELECTED the product name, and filtered by same product name and sort in ASCENDING (ASC) order.
  To get the most purchased product by each customer, I JOINED the sales and menu tables, COUNTED the customer id and named it unit and then I SELECTED customer id and product name filter by same columns and sorted by customer id in ASCENDING (ASC) order.
